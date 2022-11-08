@@ -4,11 +4,11 @@
   "description": "twitter bot",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "dev": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "twitter-lite": "^1.1.0"
+    "twit": "^2.2.11"
   }
 }
