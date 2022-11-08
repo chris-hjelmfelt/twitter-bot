@@ -21,10 +21,10 @@ async function postToStatus(status) {
 //postToStatus(mypost)
 
 
-
+var searchString = '#Minecraft lang:en -is:retweet'
 async function getTweets() {
-    user.get('search/tweets', { q: '#Minecraft lang:en', count: 20 }, function(err, data, response) {
+    user.get('search/tweets', { q: searchString, count: 20 }, function(err, data, response) {
       console.log(data)      
     })
 }
-getTweets()
+//getTweets()
