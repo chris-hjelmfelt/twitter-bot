@@ -7,7 +7,8 @@ https://www.npmjs.com/package/twit
 https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query
 
 ### Usage:     
-To post: change the status string "myPost" then uncomment the function call postToStatus()    
+To post a message: change the status string "myPost" then uncomment the function call postToStatus()    
+To post an image: uncomment the function call upload_random_image()
 To do a search: change "searchString" then uncomment the function call getTweets()
 
 ```   
