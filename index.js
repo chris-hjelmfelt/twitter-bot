@@ -27,6 +27,7 @@ async function postToStatus(status) {
 const fs = require('fs')
 const path = require('path')
 var imageArray = ["cyberpunk03.png","cyberpunk04.png","cyberpunk05.png","cyberpunk07.png","cyberpunk08.png"]
+var imageCreatorStatus = 'This image was generated using craiyon.com'
 
 function random_from_array(images){
   return images[Math.floor(Math.random() * images.length)]
@@ -48,7 +49,7 @@ function upload_random_image(images){
       console.log('Now tweeting it...')
 
       user.post('statuses/update', {
-        status: 'This image was generated using craiyon.com',
+        status: imageCreatorStatus,
         media_ids: new Array(data.media_id_string)
       },
         function(err, data, response) {
