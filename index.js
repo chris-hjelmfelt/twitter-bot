@@ -48,6 +48,7 @@ function upload_random_image(images){
       console.log('Now tweeting it...')
 
       user.post('statuses/update', {
+        status: 'This image was generated using craiyon.com',
         media_ids: new Array(data.media_id_string)
       },
         function(err, data, response) {
